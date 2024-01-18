@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', Arial;
+    background:url(https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=2885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: 5000px;
+
+}
+.header-container{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    height: 60px;
+    /* background-color: green; */
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(226, 217, 217);
+    border-radius: 10px;
+}
+.header-name{
+    background: linear-gradient(90deg,red,green,blue);
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    left: 0;
+}
+.name{
+    font-size: 35px;
+    vertical-align: top;
+    margin-top: -10px;
+}
+#check{
+    margin-top: 10px;
+    position: absolute;
+    visibility: hidden;
+    margin-right: 20px;
+    font-size: 50px;
+}
+#check-tick{
+    font-size: 50px;
+    margin-right: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+
+}
+.list-items{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    background: linear-gradient(120deg,#ff2acf,#a360a5,#4d86a8,#5e63a8,#8b2727,#ff2ced);
+    background-clip: text;
+    color: transparent;
+}
+.list-items>li{
+    animation: incoming ease 1s;
+    list-style-type: none;
+    font-size: 20px;
+    transition: all ease-in-out 0.7s;
+}
+@keyframes incoming {
+    0%{
+        transform: translateX(120px);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(-120px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+.list-items>li>i{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.list-items>li:hover{
+   text-decoration: underline;
+    cursor: pointer;
+    filter: contrast(75%);
+    padding-top: 20px;
+    color:rgb(63, 185, 201);
+    animation: incoming ease 2s;
+}
+.profile-picture{
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 200px;
+    left: 100px;
+}
+.profile-picture>img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(233, 42, 42);
+    outline: 2px solid rgb(41, 184, 245);
+    outline-offset: 10px;
+    transition: all ease-in-out 3s;
+}
+.profile-picture>img:hover{
+    cursor: pointer;
+    rotate: 360deg;
+}
+.profile-picture-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+    margin-left: -60%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.profile-picture-icons>a{
+    font-size: 40px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#facebook{
+    filter: contrast(75);
+    border-radius: 50%;
+    color: #3B5998;
+    transition: all ease-in-out 0.5s;
+    
+}
+#facebook:hover{
+    filter: drop-shadow(0px 0px 10px rgb(38, 57, 203));
+    scale: 1.2;
+    outline: 1px solid white;
+    outline-offset: 5px;
+    filter: contrast(125%);
+}
+#twitter{
+    color: rgb(43, 172, 247);
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+}
+#twitter:hover{
+    filter: brightness(120%);
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 10px rgb(21, 118, 135));
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+#github{
+    color: rgb(1, 16, 24);
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+
+}
+#github:hover{
+    filter: brightness(120%);
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 10px rgb(53, 10, 10));
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+#instagram{
+    background: linear-gradient(130deg,rgb(238, 150, 150),rgb(155, 155, 42),blue);
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+}
+#instagram:hover{
+    filter: brightness(120%);
+    scale: 1.2;
+    filter: drop-shadow(0px 0px 10px rgb(164, 231, 17));
+    outline: 1px solid white;
+    outline-offset: 5px;
+}
+.developer-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size: 20px;
+    background: linear-gradient(135deg,rgb(39, 157, 126),rgb(29, 77, 166),rgb(28, 148, 28),rgb(131, 27, 131),rgb(214, 84, 105));
+    background-clip: text;
+    color: transparent;
+    animation:intro ease-in-out 5s;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+@keyframes intro {
+    0%{
+        transform: translateX(250px) ;
+    }
+    25%{
+        transform: translateY(-200px) ;
+    }
+    50%{
+        transform: translateZ(200px) ;
+    }
+    75%{
+        transform: translateX(-250px) ;
+    }
+    100%{
+        transform: translateX(0px) ;
+    }
+    
+}
+
